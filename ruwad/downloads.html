@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أكاديمية رواد · التنزيلات</title>
+<meta name="description" content="تنزيل منهج القادة وفق المسارات الأربعة وعرض الشراكة للجهات المانحة — أكاديمية رواد">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#232A66; --navy-2:#202554; --navy-mid:#3A4290;
+    --green:#9FD44A; --green-d:#4C7A0B; --tint-g:#E6F2D2;
+    --bg:#F5F6F0; --card:#FFFFFF; --line:#DDE0EA; --muted:#4A5070; --soft:#C9CDE6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Tajawal",system-ui,sans-serif;background:var(--bg);color:var(--navy);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+  /* hero */
+  .hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+  .hero .wrap{padding-top:64px;padding-bottom:72px;position:relative;z-index:1}
+  .tag{display:inline-block;background:var(--green);color:var(--navy-2);font-weight:700;font-size:15px;padding:6px 16px;border-radius:999px}
+  .hero h1{font-size:clamp(40px,7vw,68px);font-weight:800;line-height:1.15;margin:22px 0 10px}
+  .hero p{font-size:clamp(18px,2.4vw,22px);color:var(--soft);max-width:640px}
+  .ring{position:absolute;left:-90px;top:50%;transform:translateY(-50%);width:420px;height:420px;border-radius:50%;border:2px solid #2E367A}
+  .ring::before{content:"";position:absolute;inset:-2px;border-radius:50%;border:9px solid transparent;border-top-color:var(--green);border-right-color:var(--green);transform:rotate(-20deg)}
+  .ring::after{content:"";position:absolute;width:18px;height:18px;background:var(--green);border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%)}
+  @media (max-width:760px){.ring{width:260px;height:260px;left:-140px;opacity:.6}}
+
+  /* sections */
+  main .wrap{padding-top:56px;padding-bottom:40px}
+  .eyebrow{color:var(--green-d);font-weight:700;font-size:16px}
+  .h2{font-size:clamp(26px,3.6vw,34px);font-weight:800;margin:4px 0 28px}
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  @media (max-width:860px){.grid{grid-template-columns:1fr}}
+
+  .deck{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+  .cover{background:var(--navy);padding:18px 18px 0}
+  .cover img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px 12px 0 0;box-shadow:0 -6px 24px rgba(0,0,0,.25)}
+  .body{padding:24px 24px 26px;display:flex;flex-direction:column;gap:14px;flex:1}
+  .deck h3{font-size:24px;font-weight:800;line-height:1.35}
+  .deck .desc{color:var(--muted);font-size:17px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{background:var(--tint-g);color:var(--green-d);font-weight:700;font-size:14px;padding:4px 12px;border-radius:999px}
+  .chip.n{background:#EEF0F5;color:var(--navy)}
+  .thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .thumbs img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid var(--line);display:block}
+  .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:6px}
+  .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:17px;padding:11px 18px;border-radius:12px;border:2px solid var(--navy);transition:transform .15s ease, background .15s ease}
+  .btn svg{width:20px;height:20px;flex:none}
+  .btn.primary{background:var(--navy);color:#fff}
+  .btn.primary:hover{background:var(--navy-mid);border-color:var(--navy-mid)}
+  .btn.ghost{background:transparent;color:var(--navy)}
+  .btn.ghost:hover{background:#EEF0F5}
+  .btn.link{border-color:transparent;color:var(--green-d);padding-inline:6px}
+  .btn:active{transform:translateY(1px)}
+  .btn:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+
+  .note{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px;color:var(--muted);font-size:16px;display:flex;gap:12px;align-items:flex-start}
+  .note svg{width:22px;height:22px;flex:none;margin-top:3px;color:var(--green-d)}
+
+  .home{display:inline-block;margin-top:22px;color:var(--green);font-weight:700;text-decoration:none;font-size:18px}
+  .home:hover{text-decoration:underline}
+  footer{padding:28px 0 40px;color:var(--muted);font-size:15px;text-align:center}
+  footer b{color:var(--navy)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="ring" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="tag">إحدى مبادرات مؤسسة عبدالرحمن بن صالح الراجحي وعائلته الخيرية</span>
+    <h1>أكاديمية رواد</h1>
+    <p>عروض الأكاديمية جاهزة للتنزيل: منهج القادة وفق المسارات الأربعة، وعرض الشراكة للجهات المانحة.</p>
+    <a class="home" href="./">→ العودة إلى صفحة الأكاديمية</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="eyebrow">التنزيلات</div>
+    <h2 class="h2">العروض</h2>
+
+    <div class="grid">
+
+      <!-- Curriculum -->
+      <article class="deck">
+        <div class="cover"><img src="img/cur-1.webp" alt="غلاف منهج القادة وفق المسارات الأربعة" loading="lazy"></div>
+        <div class="body">
+          <h3>منهج القادة وفق المسارات الأربعة</h3>
+          <p class="desc">المعايير والمؤشرات لمنهج برامج أكاديمية رواد: المستويات الأربعة، وجدارات كل مستوى بمدخلاتها وتطبيقاتها ومؤشراتها، والقيم، وسجل الإنجاز، والاختبارات والمقاييس.</p>
+          <div class="meta">
+            <span class="chip">٤ مستويات</span>
+            <span class="chip">١٦ جدارة</span>
+            <span class="chip n">PowerPoint · ٥٦ شريحة</span>
+            <span class="chip n">PDF · ٥١ صفحة</span>
+          </div>
+          <div class="thumbs">
+            <img src="img/cur-2.webp" alt="المسارات الأربعة" loading="lazy">
+            <img src="img/cur-4.webp" alt="شريحة افتتاح المستوى الأول" loading="lazy">
+            <img src="img/cur-6.webp" alt="شريحة عنصر بمدخلاته وتطبيقه" loading="lazy">
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="files/ruwad-leaders-curriculum.pptx" download="منهج القادة - أكاديمية رواد.pptx">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              تنزيل PowerPoint
+            </a>
+            <a class="btn ghost" href="files/ruwad-leaders-curriculum.pdf" download="منهج القادة - أكاديمية رواد.pdf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              تنزيل PDF
+            </a>
+            <a class="btn link" href="files/ruwad-leaders-curriculum.pdf" target="_blank" rel="noopener">معاينة ←</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Partnership -->
+      <article class="deck">
+        <div class="cover"><img src="img/par-1.webp" alt="غلاف عرض الشراكة للجهات المانحة" loading="lazy"></div>
+        <div class="body">
+          <h3>عرض الشراكة للجهات المانحة</h3>
+          <p class="desc">الاستثمار الرابح في القادة الواعدين: لماذا رواد، وما أنجزته الأكاديمية بالأرقام، وبرامجها، ورحلة القائد، والميزانية التقديرية، وصيغ الشراكة.</p>
+          <div class="meta">
+            <span class="chip">١٤٤ مستفيداً</span>
+            <span class="chip">١٦ مدينة</span>
+            <span class="chip n">PowerPoint · ١٣ شريحة</span>
+            <span class="chip n">PDF · ١٣ صفحة</span>
+          </div>
+          <div class="thumbs">
+            <img src="img/par-3.webp" alt="رواد في أرقام" loading="lazy">
+            <img src="img/par-9.webp" alt="منهج القادة: أربعة مسارات" loading="lazy">
+            <img src="img/par-10.webp" alt="رحلة القائد" loading="lazy">
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="files/ruwad-partnership-deck.pptx" download="عرض الشراكة - أكاديمية رواد.pptx">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              تنزيل PowerPoint
+            </a>
+            <a class="btn ghost" href="files/ruwad-partnership-deck.pdf" download="عرض الشراكة - أكاديمية رواد.pdf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              تنزيل PDF
+            </a>
+            <a class="btn link" href="files/ruwad-partnership-deck.pdf" target="_blank" rel="noopener">معاينة ←</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+      <span>ملفات PowerPoint مصممة بخط <b>Tajawal</b>؛ إن لم يكن مثبتاً على جهازك فنزّله مجاناً من Google Fonts ليظهر العرض كما صُمّم.</span>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap"><a href="./"><b>أكاديمية رواد</b></a> · تأهيل القادة الواعدين في القطاع غير الربحي</div>
+</footer>
+
+</body>
+</html>
